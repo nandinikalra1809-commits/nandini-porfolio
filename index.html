@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nandini KalraPersonal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css"> 
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <p class="brand">Nandini Kalra</p>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="page-heading">
+        <p class="eyebrow">Personal profile</p>
+        <h1 id="page-heading">Nandini Kalra</h1>
+        <p class="lede">
+          Hi, I'm Nandini Kalra, a B.Tech CSE student passionate about technology, creativity, and learning new things.
+        </p>
+      </section>
+
+      <section id="about" class="panel">
+        <h2>About</h2>
+        <p>
+          I'm a creative, enthusiastic, and ambitious person who enjoys exploring new ideas, meeting people, and developing my skills.
+        </p>
+       
+        <p class="contact-line">
+          Contact:
+          <a href="mailto:nandinikalra1809@gmail.com.com">MAIL ME</a>
+        </p>
+      </section>
+
+      <section id="skills" class="panel">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li> CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li> Git</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="panel">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li>
+            <a href="https://template-gridline-jo-qpil.bolt.host">
+              Reading List App
+            </a>
+            <p>
+              A web application for keeping track of books read and saving reading progress, built using HTML, CSS, and JavaScript.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/nandinikalra1809-commits/python-messsyoutput.git">
+              Python Code Refactoring with Cursor AI
+            </a>
+            <p>
+              A Python program focused on improving the structure and readability of an existing messy Python program using Cursor AI, while preserving its original output and intended behavior.
+            </p>
+          </li>
+          <li>
+            <a href="https://github.com/nandinikalra1809-commits/python-25bcon2182.git">
+              Python Debugging and Testing
+            </a>
+            <p>
+              A Python programming assignment focused on identifying and correcting errors in existing code. The project also includes a test file to verify the corrected program's behavior and check whether it works as expected.
+            </p>
+          </li>
+
+          <li>
+            <a href="https://github.com/HARSH1-rgb/python-basics-25bcon1092-factorial.git">
+              C++ to Python Program Conversion
+            </a>
+            <p>
+              A C++ program that converts a C++ program into a Python program using Cursor AI, while preserving its original output and intended behavior.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section id="portfolio-chatbot" class="chatbot-section"> <h2>Ask My Portfolio Chatbot</h2> <p>Ask a question and get a response from the AI.</p> <div id="chatMessages" class="chat-messages" aria-live="polite"> <p class="bot-message">Hello! Ask me something about this portfolio.</p> </div> <form id="chatForm" class="chat-form"> <input id="chatInput" type="text" placeholder="Type your question" required> <button id="chatSend" type="submit">Send</button> </form> <p id="chatStatus" aria-live="polite"></p> </section>
+
+    <section id="weather" class="weather-section">
+      <h2>Weather</h2>
+      <p>Check current conditions, temperature, and wind speed for a city.</p>
+      <form id="weatherForm" class="weather-form">
+        <label for="weatherCity">City</label>
+        <input id="weatherCity" type="text" name="city" placeholder="Enter a city" required />
+        <button id="weatherCheck" type="submit">Check</button>
+      </form>
+      <p id="weatherStatus" aria-live="polite"></p>
+      <dl id="weatherResult" class="weather-result" hidden>
+        <div>
+          <dt>Conditions</dt>
+          <dd id="weatherConditions"></dd>
+        </div>
+        <div>
+          <dt>Temperature</dt>
+          <dd id="weatherTemp"></dd>
+        </div>
+        <div>
+          <dt>Wind speed</dt>
+          <dd id="weatherWind"></dd>
+        </div>
+      </dl>
+    </section> 
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Nandini Kalra.Built as a simple
+        HTML, CSS, and JavaScript profile page.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script> 
+    <script src="chatbot.js"></script>
+    <script src="weather.js"></script> 
+
+  </body>
+</html>
